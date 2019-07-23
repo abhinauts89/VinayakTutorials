@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="Style.css" type="text/css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add Room</title>
+
+</head>
+
+<body>
+
+<header>
+ 
+   
+    <img src="logo22.png" alt="logo" style="float:left" height="180" width="180">
+        
+            <h1 align="center">Amiral Hotel</h1>
+          
+         
+       
+    </header>
+ 
+   
+    <nav>
+
+          
+            <ul>
+                <li><a href="hotelhome.html">Home </a></li>
+                <li><a href="user.html">User Registration </a></li>
+		<li><a href="AddRoom.html">Add Room  </a></li>
+		<li><a href="bookroom.html">Book Room </a></li>
+		<li><a href="manageroom.html">Manage Room Booking </a></li>
+		<li><a href="viewroom.html">View Room Availability </a></li>
+		</ul>		
+  
+
+          
+            
+            </nav>
+
+
+<center>
+<h2>Add Room</h2></center>
+<form action="bookroom.html" method="post" onsubmit="alert('Added Sucessfully')"; >
+<table align="center" width="50%" cellpadding="10" cellspacing="2" >
+<tr><th>Room No*:</th><td><input type="text" name="Room No" id="Room No" maxlength="5" size="25"  class="input" pattern="[0-9]+[A-Za-z]+" required><tr><th>
+<tr><th>
+<b>Room Type*:</b></th>
+    <td><select name="type2">
+    <option value="ac" >AC suite</option>
+    <option value="nac" >NON-AC suite</option>
+    <option value="suite" >Presidential suite</option>
+    <option value="delux" >AC Deluxe</option></td>
+  </select>
+  <br><br>
+<tr><th>
+<b>Branch*: </b></th>
+    <td><select name="loc" required>
+    <option value="Bangalore">Bangalore</option>
+     <option value="mumbai">Mumbai</option>    
+     <option value="chennai">Chennai</option>
+     <option value="vizag">Vizag</option></td>
+  </select>
+
+
+
+
+
+
+
+ <tr><th>Availability status*:</th>
+
+
+
+  <td><input type="radio" name="availabilityStatus" value="Available" size="10" checked="checked">Available
+
+  <input type="radio" name="availabilityStatus" value="Booked" size="10" >Booked</td>
+
+  </tr>
+<tr><th><p id="myP"></p></th></tr>
+<!-- <tr><th> Available</th><td><input type="text" name="Available" id="Available"></td></tr>
+<tr><th> Booked</th><td><input type="text" name="Booked"></td></tr> -->
+<tr><td></td>
+<td><button type="submit" value="Submit"  class="button">Submit</button></td>
+
+<tr>
+
+  <td colspan=2>
+
+  <b>All * marked fields are mandatory!</b>
+
+  </td>
+
+  </tr>
+</table>
+</form>
+
+</body>
+
+
+</html>
+
+0

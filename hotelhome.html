@@ -1,0 +1,62 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+
+<title>HOME</title>
+<link rel="stylesheet" href="Style.css" type="text/css" />
+</head>
+
+<body>
+<script>
+function validateForm1() {
+    var x = document.forms["myForm1"]["admin"].value;
+    var y = document.forms["myForm1"]["pass"].value;
+    if (x!= "kunal"||y!= "kunal") {
+        alert("Please enter correct Username and password");
+
+        return false;
+    }
+}
+</script>
+
+
+<header>
+
+<img src="logo22.png" alt="logo" style="float:left" height="180" width="180">
+ <h1 align="center">Amiral Hotel</h1>
+ </header>
+
+<nav>
+
+<ul>
+<li> <a href="hotelhome.html" align="center">Home</a></li>           
+<li><a href="user.html" align="center" >User Registration</a></li>
+</ul>
+
+</nav>
+            
+     
+            
+ 
+ <h2 align="center"><b>Admin Login</b></h2>
+<center>
+
+<br>
+<form name="myForm1" action="Addroom.html" style="align:center;"
+onsubmit="return validateForm1()" method="post">
+<table align="center" cellpadding="10" cellspacing="2" >
+<tr><th>Username:</th><td><input type="text" placeholder="Username" name="admin" class="input" required></td></tr>
+<tr><th>Password:</th><td><input type="password" placeholder="Password" name="pass" class="input" required></td></tr>
+ 
+<tr ><th></th ><th><button type="submit" class="button" value="Login">Login</button></th></tr>
+
+
+
+</center>
+    
+    </form>         
+            
+</body>
+</html>

@@ -1,0 +1,105 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	width:1200px;
+height:700px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+background-image: url('blur5.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+
+
+}
+h1,h2{
+
+color:#DED9CF;
+font-weight: bold;
+font-face: georgia;
+}
+
+.input,select { 
+	background-color:grey;
+	border: solid 1px rgba(0,0,0,0.30); 
+	border-radius: 4px;
+	box-shadow: inset 0 0 25px -4px rgba(0,0,0,0.29);
+	box-sizing: border-box;
+	color:white;
+	font-size: 12px;
+	height: 30px;
+	line-height: 25px;
+	margin-bottom: 25px;
+	outline: none;
+	padding: 8px 15px;
+	text-shadow: 0 0 1px rgba(0,0,0,0.7);
+	transition: border 0.3s,box-shadow 0.3s,background-color 0.3s;
+	width:100%;
+}
+.input:focus , select:focus
+{ 
+	background-color: rgba(0,0,0,0.40);
+	border: 1px solid #1e99dd;
+	box-shadow: inset 0 0 25px -4px rgba(0,0,0,0.29), 0 0 14px -1px rgba(30,153,221,0.7);	
+
+}
+
+
+/* Navigation */
+nav{
+	
+	width:100%;
+    float: center;
+    margin: 0;
+    overflow:hidden;
+    text-align: center;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+	border: grey;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a
+{
+    color: #CEFBF5  ;
+    display: block;
+    line-height: 2em;
+    padding: 0em 1em;
+    text-decoration: none;
+}
+li a:hover{
+	background-color:rgba(0,0,0,0.40);
+}
+
+.button {
+     
+    background-color:green;
+    color: black;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+}
+ button:hover {
+    opacity: 0.8;
+}
+th
+{
+color:#c2c2a3
+}
+pre
+{
+	font-face:Palatino Linotype;
+	font-weight:bold;
+	color:#d6d6c2
+	
+}

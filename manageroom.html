@@ -1,0 +1,70 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Manage Room Booking</title>
+<link rel="stylesheet" href="Style.css" type="text/css" />
+</head>
+<body>
+
+<header>
+ 
+   
+  <img src="logo22.png" alt="logo" style="float:left" height="180" width="180">
+        
+            <h1 align="center">Amiral Hotel</h1>
+          
+         
+       
+    </header>
+ 
+   
+    <nav>
+          
+            <ul>
+    <li><a href="hotelhome.html">Home </a></li>
+                <li><a href="Addroom.html">Add Room </a></li>
+				<li><a href="bookroom.html">Book Room </a></li>
+				<li><a href="manageroom.html">Manage Room Booking  </a></li>
+				<li><a href="viewroom.html">View Room Availability</a></li>
+</ul>
+				
+				
+        
+            
+         
+   </nav>
+<center>
+<h2 align="center"><b>Manage Room Booking</b></h2></center>
+ <center>
+<form action="viewroom.html" name="manage" style="align:center;" method="post" onsubmit="alert('Booked Sucessfully')";>
+<table align="center" cellpadding="10" cellspacing="2" >
+<tr><th>Room ID*:</th><td><input type="text" name="roomid" maxlength="4" size="50"  class="input" pattern="[0-9]+" required ></td></tr>
+<tr><th>Date of Check-in*:</th><td><input type="date" name="doci"  title="MM/DD/YYYY" maxlength="10" size="50" min="2017-12-20"  class="input"  required></td></tr>
+<tr><th>Date of Check-out*:</th><td><input type="date" name="doco" title="MM/DD/YYYY" maxlength="10" size="50" min="2017-12-20" class="input" required></td></tr>
+<tr><th>Booked For:</th><td><input type="text" name="bookedfor" maxlength="30" size="50"  class="input" pattern="[a-zA-Z0-9]+" required ></td></tr>
+<tr><th>Contact No*:</th><td><input type="text" name="contactno" maxlength="10" size="50"  class="input" pattern="[789][0-9]{9}" required ></td></tr>
+ <tr ><th></th ><th><button type="submit" class="button" ><b>Submit</b></button></th></tr>
+ 
+ 
+ <tr>
+
+  <td colspan=2>
+
+  <b>All * marked fields are mandatory!</b>
+
+  </td>
+
+  </tr>
+ 
+ 
+ 
+ 
+ 
+ </center>
+</table>
+</form>
+
+</body>
+</html>
